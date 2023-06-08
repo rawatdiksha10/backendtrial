@@ -59,7 +59,7 @@ app.use(
   })
 );
 
-app.listen(env.PORT, () => console.log("Server running on port: " + env.PORT));
+app.listen(() => console.log("Server running on port: " + env.PORT));
 app.use('/api/account', account);
 app.use('/api/skill', jm);
 app.use('/api', main);
