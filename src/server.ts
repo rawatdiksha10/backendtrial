@@ -27,7 +27,8 @@ const mongoDBstore = new MongoDBStore({
 app.use(
   cors({
     allowedHeaders: ['Content-Type','Authorization'],
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "https://vercelfrontend-silk.vercel.app",
     methods: ["GET","POST","PUT","DELETE","OPTIONS","HEAD"],
     credentials: true
   })
